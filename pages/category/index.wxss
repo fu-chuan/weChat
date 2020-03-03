@@ -1,0 +1,60 @@
+/* pages/category/index.wxss */
+page {
+  height: 100%;
+}
+.cates {
+  height: 100%;
+}
+.cates .scroll {
+  height: calc( 100vh - 90rpx);
+  display: flex;
+}
+.cates .scroll .scroll-left {
+  flex: 2;
+}
+.cates .scroll .scroll-left .left-menu {
+  height: 88rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30rpx;
+  font-family: Arial;
+}
+.cates .scroll .scroll-left .active {
+  color: #fff;
+  border-left: 5rpx solid #ccc;
+  background-color: var(--tint);
+}
+.cates .scroll .scroll-right {
+  flex: 5;
+}
+.cates .scroll .scroll-right .right-goods .goods-title {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cates .scroll .scroll-right .right-goods .goods-title .l {
+  padding: 0 10rpx;
+  color: #ccc;
+}
+.cates .scroll .scroll-right .right-goods .goods-title .c {
+  padding: 0 10rpx;
+  color: #ccc;
+}
+.cates .scroll .scroll-right .right-goods .goods-title .r {
+  padding: 0 10rpx;
+  color: #ccc;
+}
+.cates .scroll .scroll-right .right-goods .goods-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cates .scroll .scroll-right .right-goods .goods-list .goods-img {
+  width: 33.33%;
+  text-align: center;
+}
+.cates .scroll .scroll-right .right-goods .goods-list .goods-img image {
+  width: 50%;
+  height: 50%;
+}

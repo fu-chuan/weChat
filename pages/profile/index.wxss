@@ -1,0 +1,124 @@
+/* pages/profile/index.wxss */
+page {
+  background-color: #edece8;
+}
+view.user-info {
+  height: 50vh;
+  overflow: hidden;
+  background-color: var(--tint);
+}
+view.user-info view.user-img {
+  position: relative;
+  width: 100%;
+}
+view.user-info view.user-img .user-img-bg {
+  height: 50vh;
+  width: 100%;
+  filter: blur(4rpx);
+}
+view.user-info view.user-img view.user-wrap {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+view.user-info view.user-img view.user-wrap .user-icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+view.user-info view.user-img view.user-wrap view.user-name {
+  color: #fff;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+view.user-info .user-btn {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  border: 1rpx solid green;
+  color: green;
+  background-color: #fff;
+  padding: 30rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  border-radius: 10rpx;
+}
+.user-content {
+  position: relative;
+}
+.user-content .user-main {
+  position: absolute;
+  width: 90%;
+  top: -40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 100rpx;
+  color: #666;
+}
+.user-content .user-main .history-wrap {
+  background-color: #fff;
+  display: flex;
+  box-shadow: 2rpx 2rpx 2rpx #ccc;
+}
+.user-content .user-main .history-wrap navigator {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.user-content .user-main .history-wrap navigator .his-num {
+  color: orange;
+  font-size: 35rpx;
+  font-weight: 700;
+}
+.user-content .user-main .orders-wrap {
+  background-color: #fff;
+  margin-top: 20rpx;
+  box-shadow: 2rpx 2rpx 2rpx #ccc;
+}
+.user-content .user-main .orders-wrap .orders-title {
+  font-size: 30rpx;
+  padding: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.user-content .user-main .orders-wrap .orders-item {
+  padding-top: 8rpx;
+  display: flex;
+}
+.user-content .user-main .orders-wrap .orders-item navigator {
+  flex: 1;
+  text-align: center;
+}
+.user-content .user-main .orders-wrap .orders-item navigator .iconfont {
+  color: #d81e06;
+  font-size: 50rpx;
+}
+.user-content .user-main view.address {
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  box-shadow: 2rpx 2rpx 2rpx #ccc;
+}
+.user-content .user-main view.service {
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.user-content .user-main view.service .item {
+  padding: 20rpx;
+  border-bottom: 2px solid #cccccc;
+  overflow: hidden;
+}
+.user-content .user-main view.service .item text.item-l {
+  float: left;
+}
+.user-content .user-main view.service .item text.item-r {
+  float: right;
+}
+.user-content .user-main .recommend {
+  margin-top: 30rpx;
+  padding: 20rpx;
+  background-color: #fff;
+  box-shadow: 2rpx 2rpx 2rpx #ccc;
+}

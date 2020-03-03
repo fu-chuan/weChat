@@ -1,0 +1,31 @@
+<!--pages/feedback/index.wxml-->
+<view>
+    <tabs tabs="{{tabs}}" bindtabClick="handleTabsItemChange">
+        <view class="fb-main">
+            <view class="fb-title">问题的种类</view>
+            <view class="fb-item">
+                <text class="fb-text">功能建议</text>
+                <text class="fb-text">购买遇到问题</text>
+                <text class="fb-text">性能问题</text>
+                <text class="fb-text">其他</text>
+            </view>  
+            <view class="fb-content">
+                <textarea placeholder="请描述一下您的问题" value="{{text}}" bindInput="handleText"></textarea>
+                <view class="fb-tool">
+                    <button bindtap="handleChooseImg">+</button>
+                    <view class="up-img-item"
+                    wx:for="{{imgArray}}"
+                    wx:key="*this"
+                    bindtabClick="removeImg"><UpImg src="{{item}}"></UpImg></view>
+                </view>  
+            </view>
+            <view class="fb-btn">
+                <button bindtap="handleButton">
+                    <icon class="" type="success_no_circle" size="20" color="#fff"></icon>   
+                    提交
+                </button>
+            </view>  
+        </view>
+    </tabs>
+</view>
+

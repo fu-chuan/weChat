@@ -1,0 +1,10 @@
+/* pages/auth/index.wxss */
+view {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.primary {
+    width: 70%;
+}

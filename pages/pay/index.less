@@ -1,0 +1,130 @@
+/* pages/pay/index.wxss */
+
+.revice-address-row {
+    .address-content {
+      margin: 5rpx;
+      padding: 10rpx;
+      border: 5rpx dashed #ccc;
+      border-radius: 10rpx;
+      margin-bottom: 25rpx;
+      .content{
+        overflow: hidden;
+        .content-un {
+          float: left;
+          font-size: 30rpx;
+        }
+        .content-tel {
+          float: right;
+          font-size: 30rpx;
+        }
+      }
+      .content-dz {
+        font-size: 30rpx;
+      }
+    }
+    
+  }
+  
+  view.cart-content {
+    view.cart-title {
+      padding: 20rpx;
+      font-size: 36rpx;
+      font-weight: 700;
+      color: var(--tint);
+      border-top: 1rpx solid #ccc;
+      border-bottom: 1rpx solid #ccc;
+    }
+  
+    view.cart-mian {
+      view.cart-item {
+        display: flex;
+        padding: 10rpx;
+        border-bottom: 1rpx solid #ccc;
+        navigator.cart-img {
+          flex: 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          image {
+            width: 80%;
+          }
+        }
+  
+        view.cart-info {
+          flex: 4;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          view.goods-name {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            color: #666;
+          }
+  
+          view.price-wrap {
+            display: flex;
+            justify-content: space-between;
+            view.goods-price {
+              color: red;
+              font-size: 34rpx;
+            }
+  
+            view.num-tool {
+              display: flex;
+              view.goods-num {
+                width: 55rpx;
+                height: 55rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  view.footer-tool {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90rpx;
+    background-color: #fff;
+    display: flex;
+    border-top: 1rpx solid #ccc;
+    view.all-wrap {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+  
+    view.total-price-wrap {
+      flex: 4;
+      text-align: right;
+      padding-right: 20rpx;
+      view.totail-price {
+        text.totail-price-text {
+          color: red;
+          font-size: 32rpx;
+        }
+      }
+  
+    }
+  
+    view.all-pay-wrap {
+      flex: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32rpx;
+      font-weight: 600;
+      color: #fff;
+      background-color: rgb(250, 6, 6);
+    }
+  }

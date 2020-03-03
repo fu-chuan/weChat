@@ -1,0 +1,65 @@
+/* pages/category/index.wxss */
+page {
+  height: 100%;
+}
+.cates {
+  height: 100%;
+  .scroll {
+    height: ~'calc( 100vh - 90rpx)';
+    display: flex;
+    .scroll-left {
+      flex: 2;
+      .left-menu {
+          height: 88rpx;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          font-size: 30rpx;
+          font-family: Arial;
+      }
+      .active {
+         color: #fff; 
+         border-left: 5rpx solid #ccc;
+         background-color: var(--tint);
+      }
+    }
+    .scroll-right {
+      flex: 5;
+      .right-goods {
+          .goods-title {
+              height: 80rpx;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            .l {
+                padding: 0 10rpx;
+                color: #ccc;
+            }
+            .c {
+                padding: 0 10rpx;
+                color: #ccc;
+            }
+            .r {
+                padding: 0 10rpx;
+                color: #ccc;
+            }
+          }
+          .goods-list {
+              display: flex;
+              flex-wrap: wrap;
+              .goods-img{
+                  width: 33.33%;
+                  text-align: center;
+                  image {
+                    width: 50%;
+                    height: 50%;
+                  
+                  }
+
+              }
+
+          }
+      }
+    }
+  }
+}

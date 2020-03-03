@@ -1,0 +1,69 @@
+<!--pages/pay/index.wxml-->
+
+<!-- 获取按钮/收货地址-->
+<view class="revice-address-row">
+
+    <view class="address-content">
+        <view class="content">
+            <view class="content-un">
+            {{address.userName}}
+            </view>
+
+            <view class="content-tel">
+            {{address.telNumber}}
+            </view> 
+        </view>
+          
+        <view class="content-dz">
+            {{address.provinceName + address.cityName + address.countyName + address.detailInfo}}
+        </view>
+    </view>
+
+</view>
+
+
+<!-- 购物车内容 -->
+<view class="cart-content">
+    <view class="cart-title">购物车</view>
+    <view class="cart-mian">
+            <view class="cart-item" 
+            wx:for="{{cart}}"
+            wx:for-item="item"
+            wx:for-index="index"
+            wx:key="goods_id"
+            >
+                <!-- 商品内容 -->
+                <navigator class="cart-img" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                <image class="" src="{{item.goods_small_logo}}" mode="widthFix" />    
+                </navigator>
+                <view class="cart-info">
+                    <view class="goods-name">{{item.goods_name}}</view>
+                    <view class="price-wrap">
+                        <view class="goods-price">
+                            ￥{{item.goods_price}}
+                        </view>
+                        <view class="num-tool">
+                        <view class="goods-num">X {{item.num}}</view>  
+                        </view>    
+                    </view>   
+                </view>
+            </view> 
+    </view>
+</view>
+
+
+<!-- 底部栏 -->
+<view class="footer-tool">
+    <view class="total-price-wrap">
+        <view class="totail-price">
+            合计: <text class="totail-price-text">￥{{totalPrice}}</text>
+        </view>
+        <view>包含运费</view>
+    </view>
+    <view class="all-pay-wrap" bindtap="handlePay">
+       支付({{totalNum}}) 
+    </view>
+</view>
+  
+    
+

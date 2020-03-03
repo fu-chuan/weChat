@@ -1,0 +1,23 @@
+@import './style/iconfont.wxss';
+
+page, 
+view, 
+text, 
+swiper-item, 
+image,
+navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+page {
+  /*
+  * 定义主体颜色  全局变量
+  */
+  --tint:  #FF69B4;
+  /*
+  * 定义字体大小  全局变量
+  */
+  font-size: 28rpx;
+}
