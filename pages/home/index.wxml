@@ -7,22 +7,14 @@
   <view class="home-swiper">
     <swiper class="swiper-list" indicator-dots="ture" indicator-active-color="#fff" autoplay="ture">
       <swiper-item wx:for="{{swiperList}}" wx:key="good_id">
-<<<<<<< HEAD
-        <navigator url="{{item.navigator_url}}" >
-          <image class="" src="{{item.image_src}}" mode="widthFix" lazy-load="false" />   
-=======
-        <navigator url="{{item.navigator_url}}" open-type="navigate">
+        <navigator url="{{item.navigator_url}}" open-type="switchTab">
           <image src="{{item.image_src}}" mode="widthFix" lazy-load="false" />   
->>>>>>> this is my first test
         </navigator>     
       </swiper-item>
     </swiper> 
   </view>
       <!-- 导航栏-->  
   <view class="nav-bar">
-<<<<<<< HEAD
-    <navigator class="nav-bar-top" url="/pages/category/index" hover-class="navigator-hover" open-type="switchTab"  wx:for="{{ navList }}" wx:key="index">
-=======
     <navigator 
     class="nav-bar-top" 
     url="/pages/category/index" 
@@ -44,18 +36,13 @@
 
       <!-- 楼层内容-->
       <view class="floor-list">
-<<<<<<< HEAD
-         <navigator class="list" wx:for="{{ item1.product_list }}" wx:for-item="item2" wx:for-index="index2" wx:key="index2" url="{{item2.navigator_url}}">
-=======
          <navigator 
          class="list" 
          wx:for="{{ item1.product_list }}" 
          wx:for-item="item2" 
          wx:for-index="index2" 
          wx:key="index2" 
-         url="{{item2.navigator_url}}"
-         open-type="navigate">
->>>>>>> this is my first test
+         url="{{item2.navigator_url}}">
            <image src="{{ item2.image_src }}" mode="{{index2===0?'widthFix':'scaleToFill'}}" lazy-load="false" binderror="" bindload="" />
          </navigator>   
       </view>
